@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="...">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="envio.php" method="POST"><!--Indica pra onde sera mandado para o banco de dados-->
+        <input type="text" name="nome"><!--Caixa de texto-->
+        <br>
+        <br>
+        <input type="checkbox" name="temcarro"> Eu tenho um carro<!--Caixa te texto com tamanho fixo-->
+        <br>
+        <br>
+        Data de aniversario <input type="date" name="aniversario"><!--Data de nascimento-->
+        <br>
+        <br>
+        <!--Caixa de seleção unico-->
+        <input type="radio" name="sexo" value="Masculino">Masculino
+        <input type="radio" name="sexo" value="Feminino">Feminino
+        <input type="radio" name="sexo" value="Outro">Outro
+        <br>
+        <br>
+        <!--Caixa de texto com tamanho personalizado onde pode colcoar mais texto-->
+        <textarea name="area_de_texto" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <!--Caixa de senha, onde escondo o que foi digitado-->
+        <input type="password" name="senha"> Digite sua senha
+        <br>
+        <br>
+        <!--Aqui e a caixa onde sera enviada o submit-->
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
