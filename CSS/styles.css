@@ -8,3 +8,42 @@
     padding: 30px;
     display: inline-block;
 }
+
+/* Positions */
+/* static */
+/* relative */
+/* fixed */
+/* absolute */
+/* sticky */
+.div-position {
+    width: 500px;
+    height: 500px;
+    background-color: brown;
+    border-bottom: 2px black;
+}
+
+.static {
+    position: static;
+}
+
+.relative {
+    position: relative;
+    background-color: blue;
+    top: 50px;
+    left: 100px;
+}
+
+.absolute {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    top: 0;
+}
+
+.mini-div {
+    height: 50px;
+    width: 50px;
+    top: 0px;
+    left: 0px;
+}
