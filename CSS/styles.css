@@ -10,16 +10,17 @@
 }
 
 /* Positions */
-/* static */
-/* relative */
-/* fixed */
-/* absolute */
-/* sticky */
+/* static - flow no html, não é alterada por top, left, right e bottom */
+/* relative - flow do html, ela é alterada pelo top, left, left, righy e bottom*/
+/* fixed - posiciona em qualquer lugar da tela, e é possisionada em relação ao HTML*/
+/* absolute - posiciona em qualquer lugar, e ela respeita o elemento antecessor*/
+/* sticky - esta no flow do HTML, porém ao passar o scrolls ela funciona o fixed*/
+
 .div-position {
+    text-align: center;
     width: 500px;
     height: 500px;
-    background-color: brown;
-    border-bottom: 2px black;
+    background-color: red;
 }
 
 .static {
@@ -29,16 +30,15 @@
 .relative {
     position: relative;
     background-color: blue;
-    top: 50px;
-    left: 100px;
+    top: 100px;
+    left: 50px;
 }
 
 .absolute {
     position: absolute;
-    width: 50px;
-    height: 50px;
-    right: 0;
-    top: 0;
+    background-color: purple;
+    top: 0px;
+    right: 0px;
 }
 
 .mini-div {
@@ -46,4 +46,56 @@
     width: 50px;
     top: 0px;
     left: 0px;
+}
+
+.mini-div {
+    height: 50px;
+    width: 50px;
+    top: 0px;
+    left: 0px;
+}
+
+.fixed {
+    position: fixed;
+    width:300px;
+    height: 250px;
+    border: solid rgba(0, 0, 0, 0.116);
+    border-color: black;
+    background-color: rgb(0, 132, 255);
+    bottom: 15px;
+    right: 15px;
+    border-radius: 25px;
+}
+
+.sticky {
+    position: sticky;
+    background-color: yellow;
+    top: 100px;
+    left: 100px;
+}
+
+.container {
+    padding: 50px;
+}
+
+.div-float {
+    overflow: auto;
+}
+
+.img-float {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.p-float {
+    color: #000;
+}
+
+.clear {
+    clear: both;
 }
